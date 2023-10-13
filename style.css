@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@300;400&family=Roboto&display=swap');
+body{
+  margin:0;
+  padding:0;
+  font-family:"Poppins", san-serif;
+}
+/*header*/
+.nav{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  background:linear-gradient(45deg, #fe4b01, #fdfc96);
+  padding:10px; 
+  overflow: hidden;
+}
+a{
+  text-decoration:none;
+  color:#000;
+  font-size:18px;
+  padding:0px 10px;
+  margin:5px;  
+}
+.nav .icon, .icons {
+  display: none;
+}
+.search{
+  border:none;
+  outline:none;
+  padding:8px 12px;
+  border-radius:5px; 
+  margin:2px;
+}
+@media(max-width:576px){
+
+.nav{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  background:linear-gradient(45deg, #fe4b01, #fdfc96);
+  padding:10px; 
+  overflow: hidden;
+}
+.nav a:not(:first-child){
+	display:none;
+}
+.std:nth-child(1){
+   display:none;
+}
+.nav a.icon{	
+    display: block;		
+}
+.nav.responsive{
+	position:relative;	
+	display:flex;
+  flex-direction:column;
+}
+.nav.responsive .icons{
+	position:absolute;
+	top:10px;
+	right:10px;	
+	display:block;
+}
+.nav.responsive a{
+	float:none;	
+	display: block;
+}
+.nav.responsive .icon{
+	display:none;
+}
+}	
